@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodrigo Espinoza | Analista de Seguridad & Datos</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#0a1628;color:#fff;min-height:100vh;overflow-x:hidden;position:relative;}
+.bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;opacity:.35;}
+.bg svg{width:100%;height:100%;}
+.wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:40px 20px;display:flex;flex-direction:column;gap:24px;}
+.card{background:rgba(10,30,60,.75);border:1px solid rgba(0,255,200,.25);border-radius:14px;padding:28px 32px;backdrop-filter:blur(6px);box-shadow:0 0 20px rgba(0,255,200,.08);}
+h1{font-size:2rem;text-align:center;line-height:1.2;text-shadow:0 0 12px rgba(0,255,200,.4);}
+.sub{text-align:center;color:#9fe9d8;margin-top:10px;font-size:1rem;}
+.hero-tag{text-align:center;color:#5fffcf;font-weight:bold;letter-spacing:2px;margin-bottom:8px;font-size:.85rem;}
+h2{text-align:center;color:#5fffcf;margin-bottom:18px;font-size:1.3rem;letter-spacing:1px;}
+.about{display:flex;gap:24px;align-items:center;flex-wrap:wrap;}
+.photo{width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.08);border:2px dashed rgba(0,255,200,.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#5fffcf;font-size:.7rem;text-align:center;}
+.about p{flex:1;min-width:220px;line-height:1.6;color:#cfe9e3;}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.chip{background:rgba(0,255,200,.08);border:1px solid rgba(0,255,200,.4);border-radius:20px;padding:8px 18px;font-size:.9rem;color:#dfffee;}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+.proj{background:rgba(0,20,40,.6);border:1px solid rgba(0,255,200,.2);border-radius:10px;padding:18px;position:relative;}
+.proj .badge{position:absolute;top:-10px;right:-10px;background:#0fae8e;color:#021;font-weight:bold;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:.7rem;box-shadow:0 0 10px rgba(0,255,200,.5);}
+.proj h3{color:#5fffcf;margin-bottom:8px;font-size:1rem;}
+.proj p{color:#aecabf;font-size:.85rem;line-height:1.5;}
+.lock{position:fixed;font-size:2rem;opacity:.25;z-index:0;}
+.l1{top:8%;left:6%;}.l2{bottom:10%;right:7%;}.l3{bottom:6%;left:48%;}
+@media(max-width:600px){h1{font-size:1.4rem;}.card{padding:20px;}}
+</style>
+</head>
+<body>
+
+<div class="bg">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 800">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0d2847"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#g)"/>
+<g stroke="#0fae8e" stroke-width="1" opacity=".5" fill="none">
+<polyline points="40,300 120,250 200,280 280,200 360,230"/>
+<polyline points="40,500 120,460 200,490 280,420 360,380"/>
+<polyline points="900,250 980,200 1060,240 1140,160"/>
+<polyline points="900,480 980,440 1060,470 1140,400"/>
+</g>
+<g fill="#0fae8e" opacity=".4">
+<rect x="60" y="560" width="14" height="80"/><rect x="85" y="530" width="14" height="110"/><rect x="110" y="580" width="14" height="60"/><rect x="135" y="510" width="14" height="130"/><rect x="160" y="550" width="14" height="90"/><rect x="185" y="500" width="14" height="140"/><rect x="210" y="540" width="14" height="100"/>
+<rect x="980" y="540" width="14" height="90"/><rect x="1005" y="500" width="14" height="130"/><rect x="1030" y="560" width="14" height="70"/><rect x="1055" y="480" width="14" height="150"/><rect x="1080" y="520" width="14" height="110"/><rect x="1105" y="470" width="14" height="160"/>
+</g>
+<g fill="#5fffcf" font-family="monospace" font-size="11" opacity=".5">
+<text x="700" y="380">01101001 11010110 01001011</text>
+<text x="700" y="400">10110110 01010010 11010100</text>
+<text x="700" y="420">01001101 10101101 00110010</text>
+<text x="700" y="440">11010010 01101001 11001101</text>
+<text x="700" y="460">00101101 10010110 01110010</text>
+<text x="40" y="680">11010110 01001011 10110100</text>
+<text x="40" y="700">01010010 11010110 00101001</text>
+<text x="40" y="720">10101101 01001101 11010010</text>
+</g>
+<g stroke="#5fffcf" stroke-width="1" opacity=".35">
+<circle cx="1050" cy="120" r="3" fill="#5fffcf"/><circle cx="1120" cy="180" r="3" fill="#5fffcf"/><circle cx="980" cy="160" r="3" fill="#5fffcf"/><circle cx="1080" cy="240" r="3" fill="#5fffcf"/>
+<line x1="1050" y1="120" x2="1120" y2="180"/><line x1="1120" y1="180" x2="980" y2="160"/><line x1="980" y1="160" x2="1080" y2="240"/><line x1="1080" y1="240" x2="1050" y2="120"/>
+<circle cx="120" cy="120" r="3" fill="#5fffcf"/><circle cx="200" cy="160" r="3" fill="#5fffcf"/><circle cx="280" cy="110" r="3" fill="#5fffcf"/>
+<line x1="120" y1="120" x2="200" y2="160"/><line x1="200" y1="160" x2="280" y2="110"/>
+</g>
+</svg>
+</div>
+
+<div class="lock l1">&#128274;</div>
+<div class="lock l2">&#128274;</div>
+<div class="lock l3">&#128274;</div>
+
+<div class="wrap">
+
+<div class="card">
+<div class="hero-tag">PORTAFOLIO PROFESIONAL</div>
+<h1>ANALISTA DE SEGURIDAD &amp; DATOS</h1>
+<p class="sub">6 años protegiendo activos críticos · Análisis de datos y gestión de riesgos · Orientado a SOC / Ciberseguridad</p>
+</div>
+
+<div class="card">
+<h2>SOBRE MÍ</h2>
+<div class="about">
+<div class="photo">TU FOTO<br>AQUÍ</div>
+<p>Profesional de la seguridad con 6 años de trayectoria en seguridad operativa y gestión integral de riesgos, combinada con sólidas habilidades de análisis de datos (Python, SQL, Power BI, Splunk). Actualmente orientando mi perfil hacia ciberseguridad y SOC, aportando una visión integral que une el mundo operativo, el analítico y el digital para proteger los activos y la información de la organización frente a amenazas emergentes.</p>
+</div>
+</div>
+
+<div class="card">
+<h2>CONOCIMIENTOS</h2>
+<div class="chips">
+<span class="chip">Splunk</span><span class="chip">Wireshark</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Power BI</span><span class="chip">NIST CSF</span><span class="chip">ISO 27001</span><span class="chip">MITRE ATT&amp;CK</span>
+</div>
+</div>
+
+<div class="card">
+<h2>PROYECTOS</h2>
+<div class="projects">
+<div class="proj"><div class="badge">-35% MTTD</div><h3>Monitoreo de logs con Splunk</h3><p>Diseño de dashboards para detección temprana de anomalías y reducción del tiempo medio de detección.</p></div>
+<div class="proj"><div class="badge">98% cov</div><h3>Análisis de riesgos con Python</h3><p>Automatización de reportes de riesgo y visualización de indicadores clave de seguridad.</p></div>
+<div class="proj"><div class="badge">&lt;200ms</div><h3>Respuesta a incidentes</h3><p>Protocolos operativos de respuesta y correlación de eventos orientados a entornos SOC.</p></div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
